@@ -218,6 +218,13 @@ def main():
             if (bird.y + bird.image.get_height()) > ground.y or bird.y < 0:
                 birds.pop(i)
 
+        if len(birds) < 1:
+            running = False
+            pygame.quit()
+            print("Fim de Jogo!")
+            print(f"Pontuação: {points}")
+            quit()
+
         draw_screen(screen, birds, pipes, ground, points)
 
 

@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/RLisson/FlappyBird-Python
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "main"]
+	url = https://github.com/RLisson/FlappyBird-Python
+	fetch = +refs/heads/*:refs/remotes/main/*
